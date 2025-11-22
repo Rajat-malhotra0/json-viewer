@@ -15,7 +15,12 @@ const outputPath = path.join(__dirname, 'index.html');
 let html = fs.readFileSync(templatePath, 'utf8');
 
 // Replace environment variable placeholders
-const HOME_URL = process.env.HOME_URL || '../index.html';
+let HOME_URL = process.env.HOME_URL || '../index.html';
+
+// Ensure absolute URL if it looks like a domain but lacks protocol
+if (HOME_URL && !HOME_URL.startsWith('http') && !HOME_URL.startsWith('/') && !HOME_URL.startsWith('.')) {
+    HOME_URL = 'https://' + HOME_URL;
+}
 
 html = html.replace(/%%HOME_URL%%/g, HOME_URL);
 
