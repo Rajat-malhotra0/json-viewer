@@ -22,13 +22,34 @@ A powerful, client-side JSON visualization and formatting tool.
 
 ## Setup
 
-No build process required! This is a vanilla JavaScript application.
+### Local Development
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Rajat-malhotra0/json-viewer.git
+   cd json-viewer
    ```
-2. Open `index.html` in any modern web browser.
+
+2. (Optional) Create a `.env` file to customize the home URL (see `.env.example`):
+   ```env
+   HOME_URL=https://your-landing-page.com
+   ```
+
+3. Run the build script:
+   ```bash
+   node build.js
+   ```
+
+4. Open the generated `index.html` in any modern web browser.
+
+### Netlify Deployment
+
+1. Set environment variables in Netlify dashboard:
+   - `HOME_URL`: URL to your landing page (e.g., `https://devtoolkit.netlify.app`)
+
+2. Deploy! Netlify will automatically run `build.js` during deployment.
+
+**Note**: The source template is `index.template.html`. The `index.html` file is generated and gitignored.
 
 ## Contributing
 
