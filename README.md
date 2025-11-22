@@ -2,7 +2,7 @@
 
 A powerful, client-side JSON visualization and formatting tool.
 
-## 🚀 Features
+## Features
 
 - **Dual Modes**: Switch between Text (Code) view and Graph visualization
 - **Graph Visualization**: Interactive node-based graph view of your JSON data
@@ -12,7 +12,7 @@ A powerful, client-side JSON visualization and formatting tool.
 - **Minimalist UI**: Clean black & white aesthetics
 - **Dark Mode**: Fully supported dark theme
 
-## 🛠️ Usage
+## Usage
 
 1. Open `index.html` in your browser.
 2. Paste your JSON into the input pane.
@@ -20,7 +20,7 @@ A powerful, client-side JSON visualization and formatting tool.
 4. Switch to **Graph** tab to visualize the data structure.
 5. Use the search bar in Graph mode to find specific keys or values.
 
-## 🔧 Setup
+## Setup
 
 No build process required! This is a vanilla JavaScript application.
 
@@ -30,10 +30,10 @@ No build process required! This is a vanilla JavaScript application.
    ```
 2. Open `index.html` in any modern web browser.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 MIT
